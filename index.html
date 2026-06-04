@@ -1,13 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Astou</title>
+    <title>Astou Thiam | Développeuse Web & Entrepreneure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Mon Portfolio</h1>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Astou<span>.T</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Changer de thème">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section text-reveal">
+        <div class="hero-container">
+            <div class="hero-img">
+                <img src="astoustarrr.jpeg" alt="Astou Thiam">
+            </div>
+            <div class="hero-content">
+                <h1>Bonjour, je suis <span class="gradient-text">Astou Thiam</span></h1>
+                <h2><span class="typing-text"></span></h2>
+                <p>Passionnée par la tech et l'innovation, j'accompagne les entreprises et les porteurs de projets dans la création de solutions web sur-mesure, performantes et scalables.</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Télécharger CV</a>
+                    <a href="#contact" class="btn btn-outline">Me Contacter</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about-section scroll-reveal">
+        <h2 class="section-title">À Propos de <span>Moi</span></h2>
+        <div class="about-container">
+            <div class="about-info">
+                <h3>Qui suis-je ?</h3>
+                <p>Développeuse Full-Stack et entrepreneure basée au Sénégal, je combine rigueur technique et vision stratégique pour donner vie à vos idées digitales.</p>
+                <div class="personal-details">
+                    <div class="detail"><i class="fas fa-user"></i> <span>Nom:</span> Astou Thiam</div>
+                    <div class="detail"><i class="fas fa-envelope"></i> <span>Email:</span> contact@astouthiam.com</div>
+                    <div class="detail"><i class="fas fa-map-marker-alt"></i> <span>Localisation:</span> Dakar, Sénégal</div>
+                    <div class="detail"><i class="fas fa-graduation-cap"></i> <span>Niveau d'études:</span> Master en Génie Logiciel</div>
+                </div>
+            </div>
+            <div class="about-progress">
+                <h3>Mes Niveaux d'Expertise</h3>
+                <div class="progress-bar-group">
+                    <div class="progress-label"><span>Développement Front-end</span><span>90%</span></div>
+                    <div class="progress-bar"><div class="progress-done" data-done="90"></div></div>
+                </div>
+                <div class="progress-bar-group">
+                    <div class="progress-label"><span>Développement Back-end</span><span>85%</span></div>
+                    <div class="progress-bar"><div class="progress-done" data-done="85"></div></div>
+                </div>
+                <div class="progress-bar-group">
+                    <div class="progress-label"><span>Gestion de Base de Données</span><span>80%</span></div>
+                    <div class="progress-bar"><div class="progress-done" data-done="80"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section scroll-reveal">
+        <h2 class="section-title">Mes <span>Compétences</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-html5 text-orange"></i><h3>HTML</h3></div>
+            <div class="skill-card"><i class="fab fa-css3-alt text-blue"></i><h3>CSS</h3></div>
+            <div class="skill-card"><i class="fab fa-js text-yellow"></i><h3>JavaScript</h3></div>
+            <div class="skill-card"><i class="fab fa-php text-purple"></i><h3>PHP</h3></div>
+            <div class="skill-card"><i class="fas fa-database text-cyan"></i><h3>MySQL</h3></div>
+            <div class="skill-card"><i class="fab fa-bootstrap text-indigo"></i><h3>Bootstrap</h3></div>
+            <div class="skill-card"><i class="fab fa-java text-red"></i><h3>Java</h3></div>
+            <div class="skill-card"><i class="fas fa-code text-gray"></i><h3>C</h3></div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section scroll-reveal">
+        <h2 class="section-title">Mes <span>Projets</span></h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img"><img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=400" alt="Gestion des Bus"></div>
+                <div class="project-content">
+                    <h3>Gestion des Bus</h3>
+                    <p>Application de suivi en temps réel et réservation de tickets de bus urbains et interurbains.</p>
+                    <a href="#" class="btn-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=400" alt="Formation+"></div>
+                <div class="project-content">
+                    <h3>Formation+</h3>
+                    <p>Plateforme E-learning responsive permettant le suivi de cours vidéo et la certification d'étudiants.</p>
+                    <a href="#" class="btn-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=400" alt="Catalogue Interactif"></div>
+                <div class="project-content">
+                    <h3>Catalogue Interactif</h3>
+                    <p>Un catalogue B2B dynamique avec filtres avancés et rendu 3D de produits manufacturés.</p>
+                    <a href="#" class="btn-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img"><img src="https://images.unsplash.com/photo-1586015555751-63bb77f4322a?q=80&w=400" alt="Gestion de Stock"></div>
+                <div class="project-content">
+                    <h3>Gestion de Stock Pharmaceutique</h3>
+                    <p>Logiciel sécurisé d'inventaire, de suivi des dates de péremption et d'alertes automatiques d'approvisionnement.</p>
+                    <a href="#" class="btn-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section scroll-reveal">
+        <h2 class="section-title">Mes <span>Services</span></h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Développement Web</h3>
+                <p>Création de sites web vitrines et applications web robustes et scalables, alignés sur vos objectifs.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Design Responsive</h3>
+                <p>Conception d'interfaces modernes adaptées à tous les types d'écrans (mobiles, tablettes, PC).</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>Maintenance de Sites</h3>
+                <p>Optimisation des performances, mises à jour de sécurité et corrections régulières de vos plateformes.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-server"></i>
+                <h3>Base de Données</h3>
+                <p>Conception, modélisation et optimisation d'architectures de données SQL/NoSQL sécurisées.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section scroll-reveal">
+        <h2 class="section-title">Ce qu'ils <span>disent</span></h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="quote">"Astou a su transformer notre vieux catalogue en une application moderne et intuitive. Un travail exceptionnel et rapide !"</p>
+                <div class="client-info">
+                    <h4>Moussa Diop</h4>
+                    <span>Directeur, TechSénégal</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"Professionnelle, réactive et force de proposition. Le logiciel de gestion de pharmacie tourne à la perfection."</p>
+                <div class="client-info">
+                    <h4>Dr. Aminata Sow</h4>
+                    <span>Fondatrice, PharmaVie</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section scroll-reveal">
+        <h2 class="section-title">Me <span>Contacter</span></h2>
+        <div class="contact-container">
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder=" ">
+                    <label for="name">Nom complet</label>
+                    <span class="error-msg">Veuillez entrer votre nom.</span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder=" ">
+                    <label for="email">Adresse Email</label>
+                    <span class="error-msg">Veuillez entrer un email valide.</span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" required placeholder=" ">
+                    <label for="subject">Sujet</label>
+                    <span class="error-msg">Le sujet est obligatoire.</span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required rows="5" placeholder=" "></textarea>
+                    <label for="message">Votre Message</label>
+                    <span class="error-msg">Le message ne peut pas être vide.</span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Envoyer le message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            </div>
+            <p>&copy; 2026 Astou Thiam. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Retour en haut"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
